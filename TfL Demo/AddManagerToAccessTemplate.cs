@@ -5,11 +5,11 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace TfL_Demo
 {
-    public class AddConfidentialTeamToAccessTemplate : IPlugin
+    public class AddManagerToAccessTemplate : IPlugin
     {
         private string accessTeam { get; set; }
 
-        public AddConfidentialTeamToAccessTemplate(string unsecureConfig, string secureConfig)
+        public AddManagerToAccessTemplate(string unsecureConfig, string secureConfig)
         {
             this.accessTeam = unsecureConfig;
         }
